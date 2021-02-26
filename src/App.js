@@ -23,6 +23,10 @@ class App extends Component {
           "name": "Instagram",
           "link": "https://www.instagram.com/",
         },
+        {
+          "name": "Google",
+          "link": "https:/google.com/",
+        },
       ]
     }
   }
@@ -36,7 +40,7 @@ class App extends Component {
   }
 
   nextClick = () => {
-    if (this.state.siteNum < this.state.sites.length-2) {
+    if (this.state.siteNum < this.state.sites.length -1) {
       this.setState({
         siteNum: this.state.siteNum + 2,
       });
@@ -51,14 +55,29 @@ class App extends Component {
     }
   }
 
+  addNew = () => {
+    alert("Work in Progress");
+  }
+
   render() {
     return (
       <div className="App">
         <div className="outer">
+          {this.state.siteNum < this.state.sites.length - 1 ?
           <div className="inner">
             <button id={this.state.sites[this.state.siteNum]["link"]} onClick={this.handleClick} className="blue">{this.state.sites[this.state.siteNum]["name"]}</button>
             <button id={this.state.sites[this.state.siteNum+1]["link"]} onClick={this.handleClick} className="yellow">{this.state.sites[this.state.siteNum+1]["name"]}</button>
           </div>
+          : this.state.siteNum == this.state.sites.length - 1 ?
+          <div className="inner">
+            <button id={this.state.sites[this.state.siteNum]["link"]} onClick={this.handleClick} className="blue">{this.state.sites[this.state.siteNum]["name"]}</button>
+            <button onClick={this.addNew} className="yellow">New</button>
+          </div>
+          :
+          <div className="inner">
+            <button onClick={this.addNew} className="yellow">New</button>
+          </div>
+          }
           <div className="inner">
             <button onClick={this.backClick} className="red">Back</button>
             <button onClick={this.nextClick} className="green">Next</button>
@@ -67,7 +86,6 @@ class App extends Component {
       </div>
     );
   }
-  
 }
 
 export default App;
