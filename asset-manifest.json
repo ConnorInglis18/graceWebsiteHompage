@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/graceWebsiteHompage/static/css/main.5a4327b5.chunk.css",
+    "main.js": "/graceWebsiteHompage/static/js/main.bd07ed08.chunk.js",
+    "main.js.map": "/graceWebsiteHompage/static/js/main.bd07ed08.chunk.js.map",
+    "runtime-main.js": "/graceWebsiteHompage/static/js/runtime-main.a86576df.js",
+    "runtime-main.js.map": "/graceWebsiteHompage/static/js/runtime-main.a86576df.js.map",
+    "static/js/2.eb02ef83.chunk.js": "/graceWebsiteHompage/static/js/2.eb02ef83.chunk.js",
+    "static/js/2.eb02ef83.chunk.js.map": "/graceWebsiteHompage/static/js/2.eb02ef83.chunk.js.map",
+    "static/js/3.f0e44333.chunk.js": "/graceWebsiteHompage/static/js/3.f0e44333.chunk.js",
+    "static/js/3.f0e44333.chunk.js.map": "/graceWebsiteHompage/static/js/3.f0e44333.chunk.js.map",
+    "index.html": "/graceWebsiteHompage/index.html",
+    "static/css/main.5a4327b5.chunk.css.map": "/graceWebsiteHompage/static/css/main.5a4327b5.chunk.css.map",
+    "static/js/2.eb02ef83.chunk.js.LICENSE.txt": "/graceWebsiteHompage/static/js/2.eb02ef83.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a86576df.js",
+    "static/js/2.eb02ef83.chunk.js",
+    "static/css/main.5a4327b5.chunk.css",
+    "static/js/main.bd07ed08.chunk.js"
+  ]
+}
